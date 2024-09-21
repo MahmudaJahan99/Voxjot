@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!---------- Meta Data ---------->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!---------- StyleSheet ---------->
+    <link rel="stylesheet" href="styles/style.css" />
+    <!-- Frameworks -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <title>Login</title>
+  </head>
+  <body>
+    <!---------- HEADER ---------->
+    <header>
+      <!---------- Top Navbar ---------->
+      <nav></nav>
+    </header>
+    <main class="flex items-center justify-center h-screen">
+      <div class="flex flex-col space-y-28">
+        <h1 class="text-3xl font-semibold text-center">Login to VoxJot</h1>
+        <form action="" id="form-container" class="space-y-5">
+          <div>
+            <label for="username" class="uppercase font-medium">Username</label>
+            <input
+              type="email"
+              name="username"
+              id="username-mail"
+              placeholder="hello@reallygreatsite.com"
+              class="w-full max-w-xs"
+            />
+          </div>
+          <div>
+            <label for="password" class="uppercase font-medium">Password</label>
+            <input
+              type="password"
+              name="password"
+              id="username-password"
+              class="w-full max-w-xs"
+            />
+          </div>
+        </form>
+        <div class="primary-btn-container m-auto">
+          <button class="btn primary-btn">LOG IN</button>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+
+    <!-- Scripts of frameworks -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>
