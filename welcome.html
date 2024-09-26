@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!---------- StyleSheet ---------->
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/resposive.css" />
     <!-- Frameworks -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link
@@ -27,43 +28,62 @@
       </nav>
     </header>
 
-    <main class="container m-auto my-10 grid grid-cols-4">
-      <div class="flex flex-col space-y-7">
+    <main
+      class="container m-auto my-10 md:grid md:grid-cols-6 space-y-5 md:space-y-0"
+    >
+      <!-- buttons on left side -->
+      <div class="flex flex-col space-y-7 p-3 col-span-2">
+        <!-- button 1 -->
         <div class="primary-btn-container flex items-center">
-          <img class="w-14" src="assets/idea.gif" alt="idea" />
-          <button class="btn primary-btn capitalize shadow-lg btn-jot w-full">
-            jot a thought
-          </button>
+          <img class="w-10" src="assets/idea.gif" alt="idea" />
+          <div class="w-full">
+            <button class="btn primary-btn capitalize shadow-lg btn-jot w-full">
+              jot a thought
+            </button>
+          </div>
         </div>
+        <!-- button 2 -->
         <div class="primary-btn-container flex items-center">
-          <img class="w-14" src="assets/pen.gif" alt="pen" />
-          <button class="btn primary-btn capitalize shadow-lg btn-jot w-full">
-            jot some text
-          </button>
+          <img class="w-10" src="assets/pen.gif" alt="pen" />
+          <div class="w-full">
+            <button class="btn primary-btn capitalize shadow-lg btn-jot w-full">
+              jot some text
+            </button>
+          </div>
         </div>
+        <!-- button 3 -->
         <div class="primary-btn-container flex items-center">
-          <img class="w-14" src="assets/upload.gif" alt="upload" />
-          <button class="btn primary-btn capitalize shadow-lg btn-jot w-full">
-            upload a jot
-          </button>
+          <img class="w-10" src="assets/upload.gif" alt="upload" />
+          <div class="w-full">
+            <button class="btn primary-btn capitalize shadow-lg btn-jot w-full">
+              upload a jot
+            </button>
+          </div>
         </div>
+        <!-- button 4 -->
         <div class="primary-btn-container flex items-center">
-          <img class="w-14" src="assets/search.gif" alt="search" />
-          <button class="btn primary-btn capitalize shadow-lg btn-jot w-full">
-            search
-          </button>
+          <img class="w-10" src="assets/search.gif" alt="search" />
+          <div class="w-full">
+            <button class="btn primary-btn capitalize shadow-lg btn-jot w-full">
+              search
+            </button>
+          </div>
         </div>
       </div>
       <div></div>
-      <div class="flex flex-col justify-between col-span-2">
+      <!-- buttons on right side -->
+      <div class="flex flex-col justify-between col-span-3 p-3 space-y-7">
+        <!-- button 1 -->
         <div class="primary-btn-container">
           <button class="btn primary-btn capitalize shadow-lg btn-jot w-full">
             previous notes
           </button>
         </div>
+        <!-- note summary -->
         <div class="note-summary p-5">
           <ul>
             <li>Sample Notes Summary.</li>
+            <br />
             <li>
               <div class="dropdown dropdown-hover">
                 <div tabindex="0" role="button">
@@ -82,6 +102,7 @@
             </li>
           </ul>
         </div>
+        <!-- button 2 -->
         <div class="primary-btn-container">
           <button class="btn primary-btn capitalize shadow-lg btn-jot w-full">
             running jobs and status
