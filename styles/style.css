@@ -6,6 +6,7 @@
 
 :root {
     --main-color: #45dfb1;
+    --main-less-opacity: #45dfb11a;
     --dark-1: #353839;
     --dark-2: #7C7B7A;
 }
@@ -16,16 +17,16 @@ body {
 
 .primary-btn {
     background-color: var(--main-color) !important;
-    padding: 0.5rem 3rem !important;
     border-radius: 5px !important;
     font-weight: 700 !important;
+    
 }
 
 header nav {
     background-color: var(--main-color);
     min-height: 5rem;
 }
-
+/**********----------- LOGIN PAGE ----------**********/
 /* Form Contents */
 #form-container {
     display: flex;
@@ -44,4 +45,14 @@ header nav {
     background-color: #f9f9f9;
     outline: none;
     box-shadow: -2px 5px 5px rgba(69, 223, 177, 0.2);
+}
+
+/**********----------- WELCOME PAGE ----------**********/
+/* logo image */
+nav .img-container{
+    max-width: 5.1rem;
+}
+
+.note-summary {
+    background-color: var(--main-less-opacity);
 }
