@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!---------- StyleSheet ---------->
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/resposive.css" />
+    <!-- Frameworks -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Icons -->
+    <script
+      src="https://kit.fontawesome.com/9e9f20c427.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Jotext</title>
+    <link rel="icon" type="image/png" href="assets/logo.png" />
+  </head>
+  <body class="h-screen">
+    <!---------- HEADER ---------->
+    <header>
+      <!---------- Top Navbar ---------->
+      <nav>
+        <div class="img-container">
+          <img src="assets/logo.png" alt="logo" />
+        </div>
+      </nav>
+    </header>
+
+    <main class="container m-auto my-10">
+      <!-- buttons on right side -->
+      <div class="flex flex-col justify-between col-span-3 p-3 space-y-7">
+        <!-- Heading -->
+        <div class="primary-btn-container">
+          <h1 class="capitalize primary-btn p-2 shadow-lg w-full text-xl font-bold text-center">
+            Search Result
+          </h1>
+        </div>
+        <!-- note summary -->
+        <div class="note-summary p-5">
+          <ul>
+            <li>Sample Notes Summary.</li>
+            <br />
+            <li>
+              <div class="dropdown dropdown-hover">
+                <div tabindex="0" role="button">
+                  Drop down list to show all the notes. Hover to view.
+                </div>
+                <ul
+                  tabindex="0"
+                  class="dropdown-content menu bg-base-100 rounded-box z-[1] w-full p-2 shadow"
+                >
+                  <li><a>Note Item 1</a></li>
+                  <li><a>Note Item 2</a></li>
+                  <li><a>Note Item 3</a></li>
+                  <li><a>Note Item 4</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
