@@ -23,23 +23,29 @@
     <title>Jotext</title>
     <link rel="icon" type="image/png" href="assets/logo.png" />
   </head>
-  <body class="h-screen">
+  <body class="min-h-screen">
     <!---------- HEADER ---------->
     <header>
       <!---------- Top Navbar ---------->
       <nav>
         <div class="img-container">
-          <img src="assets/logo.png" alt="logo" />
+          <a href="welcome.html">
+            <!-- Logo -->
+            <img src="assets/logo.png" alt="logo" />
+          </a>
         </div>
       </nav>
     </header>
 
-    <main>
-      <!-- Text Div Section -->
+    <!---------- MAIN ---------->
+    <main class="w-11/12 mx-auto mt-5 md:mt-10">
+      <!-- Search Section -->
       <section class="h-80 flex flex-col items-center justify-center space-y-5">
+        <!-- Input Area -->
         <div class="w-3/4 md:w-1/2">
-            <input type="text" class="input w-full rounded-full" />
+          <input type="text" class="input w-full rounded-full" />
         </div>
+        <!-- Button -->
         <div class="primary-btn-container">
           <a href="search result.html">
             <button class="btn primary-btn w-40">Search</button>
@@ -47,5 +53,8 @@
         </div>
       </section>
     </main>
+
+    <!---------- FOOTER ---------->
+    <footer></footer>
   </body>
 </html>
