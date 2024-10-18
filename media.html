@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!---------- StyleSheet ---------->
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/resposive.css" />
+    <!-- Frameworks -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Icons -->
+    <script
+      src="https://kit.fontawesome.com/9e9f20c427.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Jotiles</title>
+    <link rel="icon" type="image/png" href="assets/logo.png" />
+  </head>
+  <body class="h-screen">
+    <!---------- HEADER ---------->
+    <header>
+      <!---------- Top Navbar ---------->
+      <nav>
+        <div class="img-container">
+          <img src="assets/logo.png" alt="logo" />
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Text Div Section -->
+      <section class="h-80 flex flex-col items-center justify-center space-y-5">
+        <div class="primary-btn-container">
+            <a href="">
+              <button class="btn primary-btn w-40">Add File</button>
+            </a>
+          </div>
+        <div class="w-11/12 md:w-3/4">
+          <textarea
+            class="textarea textarea-lg w-full rounded-full"
+          ></textarea>
+        </div>
+        <div class="primary-btn-container">
+          <a href="">
+            <button class="btn primary-btn w-40">Upload File</button>
+          </a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
