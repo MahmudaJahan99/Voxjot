@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!---------- StyleSheet ---------->
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/resposive.css" />
+    <!-- Frameworks -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Icons -->
+    <script
+      src="https://kit.fontawesome.com/9e9f20c427.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Jotdio</title>
+    <link rel="icon" type="image/png" href="assets/logo.png" />
+  </head>
+  <body class="h-screen">
+    <!---------- HEADER ---------->
+    <header>
+      <!---------- Top Navbar ---------->
+      <nav>
+        <div class="img-container">
+          <img src="assets/logo.png" alt="logo" />
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Record Div Section -->
+      <section>
+        <!-- Record Image -->
+        <div class="flex flex-col items-center justify-center h-80">
+          <!-- Record flickering -->
+          <div class="record-img">
+            <img src="assets/record1.gif" alt="Record image" />
+          </div>
+
+          <!-- Record control buttons -->
+          <div
+            class="grid grid-cols-4 gap-3 border border-slate-900 rounded-lg p-3"
+          >
+            <button>
+              <span
+                class="flex items-center justify-center border border-slate-800 rounded px-2 py-1"
+              >
+                <i
+                  class="fa-solid fa-circle text-2xl"
+                  style="color: #ff0000"
+                ></i>
+              </span>
+            </button>
+            <button>
+              <span
+                class="flex items-center justify-center border border-slate-800 rounded px-2 py-1"
+              >
+                <i class="fa-solid fa-play text-2xl" style="color: #000000"></i>
+              </span>
+            </button>
+            <button>
+              <span
+                class="flex items-center justify-center border border-slate-800 rounded px-2 py-1"
+              >
+                <i
+                  class="fa-solid fa-pause text-2xl"
+                  style="color: #000000"
+                ></i>
+              </span>
+            </button>
+            <button>
+              <span
+                class="flex items-center justify-center border border-slate-800 rounded px-2 py-1"
+              >
+                <i class="fa-solid fa-stop text-2xl" style="color: #000000"></i>
+              </span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

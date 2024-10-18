@@ -1,3 +1,6 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -10,22 +13,26 @@
     --dark-1: #353839;
     --dark-2: #7C7B7A;
 }
+
 /* Gloabl Styles */
 body {
+    font-family: "Lato", sans-serif;
     color: var(--dark-1);
+    background: #f0f0f0;
 }
 
 .primary-btn {
     background-color: var(--main-color) !important;
     border-radius: 5px !important;
     font-weight: 700 !important;
-    
+    font-size: 1.2rem !important;
 }
 
 header nav {
     background-color: var(--main-color);
     min-height: 5rem;
 }
+
 /**********----------- LOGIN PAGE ----------**********/
 /* Form Contents */
 #form-container {
@@ -49,10 +56,16 @@ header nav {
 
 /**********----------- WELCOME PAGE ----------**********/
 /* logo image */
-nav .img-container{
+nav .img-container {
     max-width: 5.1rem;
 }
 
 .note-summary {
     background-color: var(--main-less-opacity);
+}
+
+/**********----------- RECORD PAGE ----------**********/
+.record-img img{
+    width: 25rem;
+    margin: 1rem 2rem;
 }
