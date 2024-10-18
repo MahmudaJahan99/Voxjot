@@ -23,26 +23,32 @@
     <title>Jotext</title>
     <link rel="icon" type="image/png" href="assets/logo.png" />
   </head>
-  <body class="h-screen">
+  <body class="min-h-screen">
     <!---------- HEADER ---------->
     <header>
       <!---------- Top Navbar ---------->
       <nav>
         <div class="img-container">
-          <img src="assets/logo.png" alt="logo" />
+          <a href="welcome.html">
+            <!-- Logo -->
+            <img src="assets/logo.png" alt="logo" />
+          </a>
         </div>
       </nav>
     </header>
 
-    <main>
+    <!---------- MAIN ---------->
+    <main class="w-11/12 mx-auto mt-5 md:mt-10">
       <!-- Text Div Section -->
       <section class="h-80 flex flex-col items-center justify-center space-y-5">
+        <!-- Input Area -->
         <div class="w-11/12 md:w-3/4">
           <textarea
             placeholder="What are you thinking?"
             class="textarea textarea-lg w-full rounded-full"
           ></textarea>
         </div>
+        <!-- Button -->
         <div class="primary-btn-container">
           <a href="">
             <button class="btn primary-btn w-40">Save Thought</button>
@@ -50,5 +56,8 @@
         </div>
       </section>
     </main>
+
+    <!---------- FOOTER ---------->
+    <footer></footer>
   </body>
 </html>

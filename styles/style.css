@@ -65,10 +65,10 @@ nav .img-container {
 }
 
 /**********----------- RECORD PAGE ----------**********/
-.record-img img{
+/* .record-img img{
     width: 25rem;
     margin: 1rem 2rem;
-}
+} */
 
 /**********----------- TEXT PAGE ----------**********/
 textarea {

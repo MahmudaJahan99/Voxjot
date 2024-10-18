@@ -23,68 +23,70 @@
     <title>Jotdio</title>
     <link rel="icon" type="image/png" href="assets/logo.png" />
   </head>
-  <body class="h-screen">
+  <body class="min-h-screen">
     <!---------- HEADER ---------->
     <header>
       <!---------- Top Navbar ---------->
       <nav>
         <div class="img-container">
-          <img src="assets/logo.png" alt="logo" />
+          <a href="welcome.html">
+            <!-- Logo -->
+            <img src="assets/logo.png" alt="logo" />
+          </a>
         </div>
       </nav>
     </header>
 
-    <main>
+    <!---------- MAIN ---------->
+    <main class="w-11/12 mx-auto mt-5 md:mt-10">
       <!-- Record Div Section -->
-      <section>
+      <section class="flex flex-col items-center justify-center h-80">
         <!-- Record Image -->
-        <div class="flex flex-col items-center justify-center h-80">
-          <!-- Record flickering -->
-          <div class="record-img">
-            <img src="assets/record1.gif" alt="Record image" />
-          </div>
+        <div class="record-img">
+          <img class="w-96" src="assets/record1.gif" alt="Record image" />
+        </div>
 
-          <!-- Record control buttons -->
-          <div
-            class="grid grid-cols-4 gap-3 border border-slate-900 rounded-lg p-3"
-          >
-            <button>
-              <span
-                class="flex items-center justify-center border border-slate-800 rounded px-2 py-1"
-              >
-                <i
-                  class="fa-solid fa-circle text-2xl"
-                  style="color: #ff0000"
-                ></i>
-              </span>
-            </button>
-            <button>
-              <span
-                class="flex items-center justify-center border border-slate-800 rounded px-2 py-1"
-              >
-                <i class="fa-solid fa-play text-2xl" style="color: #000000"></i>
-              </span>
-            </button>
-            <button>
-              <span
-                class="flex items-center justify-center border border-slate-800 rounded px-2 py-1"
-              >
-                <i
-                  class="fa-solid fa-pause text-2xl"
-                  style="color: #000000"
-                ></i>
-              </span>
-            </button>
-            <button>
-              <span
-                class="flex items-center justify-center border border-slate-800 rounded px-2 py-1"
-              >
-                <i class="fa-solid fa-stop text-2xl" style="color: #000000"></i>
-              </span>
-            </button>
-          </div>
+        <!-- Record control buttons -->
+        <div
+          class="grid grid-cols-4 gap-3 border border-slate-900 rounded-lg p-3"
+        >
+          <!-- Button - RECORD -->
+          <button>
+            <span
+              class="flex items-center justify-center border border-slate-800 rounded px-2 py-1"
+            >
+              <i class="fa-solid fa-circle text-2xl" style="color: #ff0000"></i>
+            </span>
+          </button>
+          <!-- Button - PLAY -->
+          <button>
+            <span
+              class="flex items-center justify-center border border-slate-800 rounded px-2 py-1"
+            >
+              <i class="fa-solid fa-play text-2xl" style="color: #000000"></i>
+            </span>
+          </button>
+          <!-- Button - PAUSE -->
+          <button>
+            <span
+              class="flex items-center justify-center border border-slate-800 rounded px-2 py-1"
+            >
+              <i class="fa-solid fa-pause text-2xl" style="color: #000000"></i>
+            </span>
+          </button>
+          <!-- Button - STOP -->
+          <button>
+            <span
+              class="flex items-center justify-center border border-slate-800 rounded px-2 py-1"
+            >
+              <i class="fa-solid fa-stop text-2xl" style="color: #000000"></i>
+            </span>
+          </button>
         </div>
       </section>
     </main>
+
+    <!---------- FOOTER ---------->
+    <footer></footer>
   </body>
 </html>
