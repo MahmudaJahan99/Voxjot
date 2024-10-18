@@ -69,3 +69,8 @@ nav .img-container {
     width: 25rem;
     margin: 1rem 2rem;
 }
+
+/**********----------- TEXT PAGE ----------**********/
+textarea {
+    resize: none !important;
+  }
